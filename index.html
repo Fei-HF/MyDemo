@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>菲</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--<link rel="stylesheet" href="css/normalize.css">-->
+		<link rel="stylesheet" href="css/font-awesome.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/templatemo-style.css">
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+		<script src="js/jquery-1.11.0.min.js"></script>
+
+		<script src="js/UI/jquery.min.js"></script>
+		<script src="js/UI/jquery.easyui.min.js"></script>
+		<script src="js/UI/locale/easyui-lang-zh_CN.js"></script>
+		<link href="js/UI/themes/default/easyui.css" rel="stylesheet" />
+		<link href="js/UI/themes/icon.css" rel="stylesheet" />
+
+		<script type="text/javascript">
+			$(function() {
+				var $content = $("#content");
+				var $list = $content.find("ul li");
+				$list.last().css("width", "789px");
+				$list.click(function() {
+					$(this).stop().animate({
+						width: 789 + "px"
+					}).siblings().stop().animate({
+						width: 100 + "px"
+					})
+				});
+
+				$("#yourname").validatebox({
+					required: true,
+					missingMessage: "请输入你的名字！"
+				});
+				$("#youremail").validatebox({
+					required: true,
+					missingMessage: "请输入你的邮箱信息！",
+					validType: 'e-mail',
+					invalidMessage: "请输入正确的邮箱地址"
+				});
+				$("#yoursubject").validatebox({
+					required: true,
+					missingMessage: "请输入主题！"
+				});
+				$("#message").validatebox({
+					required: true,
+					missingMessage: "请留言......！"
+				});
+
+			});
+		</script>
+	</head>
+
+	<body>
+		<!--头部菜单(缩放)-->
+		<div class="responsive-header visible-xs visible-sm">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="top-section">
+							<div class="profile-image">
+								<img src="img/psb.jpg" alt="Volton">
+							</div>
+							<div class="profile-content">
+								<h3 class="profile-title">菲</h3>
+								<p class="profile-description">简约风</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="toggle-menu"><i class="fa fa-bars"></i></a>
+				<!--缩放菜单-->
+				<div class="main-navigation responsive-menu">
+					<ul class="navigation">
+						<li>
+							<a href="#top"><i class="fa fa-home"></i>首页</a>
+						</li>
+						<li>
+							<a href="#about"><i class="fa fa-user"></i>关于我</a>
+						</li>
+						<li>
+							<a href="#projects"><i class="fa fa-newspaper-o"></i>我的技能</a>
+						</li>
+						<li>
+							<a href="#contact"><i class="fa fa-envelope"></i>联系我</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- 侧边菜单 -->
+		<div class="sidebar-menu hidden-xs hidden-sm">
+			<div class="top-section">
+				<div class="profile-image">
+					<img src="img/psb.jpg" alt="Volton">
+				</div>
+				<h3 class="profile-title">菲</h3>
+				<p class="profile-description">简约风</p>
+			</div>
+			<div class="main-navigation">
+				<ul class="navigation">
+					<li>
+						<a href="#top"><i class="fa fa-globe"></i>欢迎</a>
+					</li>
+					<li>
+						<a href="#about"><i class="fa fa-pencil"></i>关于我</a>
+					</li>
+					<li>
+						<a href="#projects"><i class="fa fa-paperclip"></i>我的技能</a>
+					</li>
+					<li>
+						<a href="#contact"><i class="fa fa-link"></i>联系我</a>
+					</li>
+				</ul>
+			</div>
+			<!-- 图标 -->
+			<div class="social-icons">
+				<ul>
+					<li>
+						<a href="#"><i class="fa fa-facebook"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fa fa-linkedin"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fa fa-google-plus"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fa fa-youtube"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fa fa-rss"></i></a>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+		
+
+		<div class="banner-bg" id="top">
+			<div class="banner-overlay"></div>
+			<div class="welcome-text">
+				<h2>简单的设计 | 个人的爱好</h2>
+				<h5>简简单单,简约不简单.</h5>
+			</div>
+		</div>
+
+	
+	
+		<div class="main-content" style="margin-bottom: 390px;">
+
+			<div class="row" id="about">
+				<div class="wrapperbox">
+					<div class="story-top">
+						<ul>
+							<li class="left-li">
+								<<< </li>
+									<li>项目卡片</li>
+									<li class="right-li"> >>> </li>
+						</ul>
+					</div>
+
+					<div class="containerbox" id="c0">
+						<div class="image">
+							<img src="img/个人博客.png" />
+						</div>
+						<div class="story" id="s0">
+							<div class="info">
+								<span class="story-title">个人博客</span>
+								<br />
+								<span class="story-main">
+									&nbsp;&nbsp;一个小小的窝,你可以在这个博客上分享你的回忆,有着多种炫酷的效果,可以让更多的人认识到你.
+									<br />
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;基于HTML,css,js开发,同时也使用了jQuery框架,更加深刻的熟悉了css动画以及3D特效.
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="containerbox" id="c1">
+						<div class="image">
+							<img src="img/餐饮系统.png" />
+						</div>
+						<div class="story" id="s1">
+							<div class="info">
+								<span class="story-title">餐饮管理系统</span>
+								<br />
+								<span class="story-main">
+									&nbsp;&nbsp;员工面向顾客以及管理员管理员工,员工从开台到结账一条龙,管理员对菜单,员工,仓库进行管理.
+									<br />
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;使用C/S模式进行开发,使用ADO.NET技术实现对程序数据的DML操作,使用数据集控件实现DataSet断开式查询获取数据.
+									
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="containerbox" id="c2">
+						<div class="image">
+							<img src="img/淘淘汽配.png" />
+						</div>
+						<div class="story" id="s2">
+							<div class="info">
+								<span class="story-title">淘淘汽配</span>
+								<br />
+								<span class="story-main">
+									&nbsp;&nbsp;用户可以在该网站购买汽车配件,加入购物车,下订单.同时管理员可以对后台的商品进行更新.
+									<br />
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;使用asp.net框架实现程序相对应业务逻辑，使用三层架构思想以及OOP思想对程序进行整体架构和相对应类的封装，使用WebForm服务器控件进行数据显示，实现业务流的操作。
+									
+								</span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- MAIN CONTENT -->
+		<div class="main-content">
+			<div class="fluid-container">
+
+				<div class="content-wrapper">
+
+					<!-- ABOUT -->
+					<div class="page-section">
+
+						<div class="row">
+							<div class="col-md-12">
+								<h4 class="widget-title">My Hobby</h4>
+								<div class="about-image">
+									<div id="frame">
+										<div id="content">
+											<ul class="clearfix">
+												<li>
+													<p><span>我的个人拉萨之旅丨丨故事之城</span></p>
+												</li>
+												<li>
+													<p><span>我的个人拉萨之旅丨丨故事之城</span></p>
+												</li>
+												<li>
+													<p><span>我的个人拉萨之旅丨丨故事之城</span></p>
+												</li>
+												<li>
+													<p><span>我的个人拉萨之旅丨丨故事之城</span></p>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<p>
+									<ul class="hobby">
+										<li>
+											<span class="list-title"><span><img src="img/about/乒乓球.png" alt="乒乓球" /></span>乒乓球:</span>
+											<br />
+											<span class="list-content">周末和同学在乒乓球室一起打打球,累到满身是汗,将一整天在椅子上的疲惫全部抛之脑后.</span>
+										</li>
+										<li>
+											<span class="list-title"><span><img src="img/about/跑步.png" alt="跑步" /></span>跑步:</span>
+											<br />
+											<span class="list-content">晚上与同学或独自一人在跑道上,在湖边跑着,戴着耳机,忘却一切烦恼,耳边的只有音乐和风声.</span>
+										</li>
+										<li>
+											<span class="list-title"><span><img src="img/about/电影.png" alt="电影" /></span>电影:</span>
+											<br />
+											<span class="list-content">放假了,去电影院看一场电影,过去的一周烦心事全都在一帧帧影片中消逝.</span>
+										</li>
+										<li>
+											<span class="list-title"><span><img src="img/about/游戏.png" alt="游戏" /></span>游戏:</span>
+											<br />
+											<span class="list-content">平时累了,和同学一起开黑,这不是一个人的游戏,这是一场团队的竞技.</span>
+										</li>
+										<li>
+											<span class="list-title"><span><img src="img/about/音乐.png" alt="音乐" /></span>音乐:</span>
+											<br />
+											<span class="list-content">它,洗涤着人们的内心.</span>
+										</li>
+									</ul>
+								</p>
+								<hr>
+							</div>
+						</div>
+					</div>
+
+					<!-- PROJECTS -->
+					<div class="page-section" id="projects">
+						<div class="row">
+							<div class="col-md-12">
+								<h4 class="widget-title">My Skill</h4>
+								<p>
+									<ul style="list-style: square;">
+										<li>熟悉HTML、CSS以及DIV+CSS，了解HTML5，CSS3新特性以及Bootstrap响应式布局特性。</li>
+										<li>熟悉JavaScript，熟悉DOM编程思想。</li>
+										<li>熟悉jQuery框架技术以及jQuery第三方插件的使用。</li>
+										<li>熟悉jQueryeasyUI，了解正则，DOM编程，Ajax异步交互数据，Json数据源结构等等。</li>
+									</ul>
+
+									同时还掌握了.net开发.
+								</p>
+							</div>
+						</div>
+						<div class="row projects-holder">
+							<div class="col-md-4 col-sm-6">
+								<div class="project-item">
+									<img src="img/skill/html.jpg" alt="">
+									<div class="project-hover">
+										<div class="inside">
+											<h5><a href="#">HTML</a></h5>
+											<p>超文本标记语言(Hyper Text Markup Language)，标准通用标记语言下的一个应用。HTML 不是一种编程语言，而是一种标记语言 (markup language)，是网页制作所必备的</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6">
+								<div class="project-item">
+									<img src="img/skill/css.jpg" alt="">
+									<div class="project-hover">
+										<div class="inside">
+											<h5><a href="#">CSS</a></h5>
+											<p>层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记语言的一个子集）等文件样式的计算机语言。CSS不仅可以静态地修饰网页，还可以配合各种脚本语言动态地对网页各元素进行格式化。</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6">
+								<div class="project-item">
+									<img src="img/skill/JavaScript.jpg" alt="">
+									<div class="project-hover">
+										<div class="inside">
+											<h5><a href="#">JavaScript</a></h5>
+											<p>JavaScript一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为JavaScript引擎，为浏览器的一部分，用来给HTML网页增加动态功能。</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6">
+								<div class="project-item">
+									<img src="img/skill/jQuery.jpg" alt="">
+									<div class="project-hover">
+										<div class="inside">
+											<h5><a href="#">jQuery</a></h5>
+											<p>jQuery设计的宗旨是“write Less，Do More”，即倡导写更少的代码，做更多的事情。它封装JavaScript常用的功能代码，提供一种简便的JavaScript设计模式，优化HTML文档操作、事件处理、动画设计和Ajax交互。</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6">
+								<div class="project-item">
+									<img src="img/skill/bootstrap.jpg" alt="">
+									<div class="project-hover">
+										<div class="inside">
+											<h5><a href="#">Bootstrap</a></h5>
+											<p>基于HTML、CSS、JavaScript 开发的简洁、直观、强悍的前端开发框架，使得 Web 开发更加快捷。</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6">
+								<div class="project-item">
+									<img src="img/skill/net.jpg" alt="">
+									<div class="project-hover">
+										<div class="inside">
+											<h5><a href="#">.NET</a></h5>
+											<p>.NET是 Microsoft XML Web services 平台。XML Web services 允许应用程序通过 Internet 进行通讯和共享数据，而不管所采用的是哪种操作系统、设备或编程语言。</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-6" style="padding-left: 100px;">
+									<p>
+										<h4 class="widget-title" style="margin-top: 90px;">开发工具</h4>
+										<ul style="list-style: square;">
+											<li>Hbuild</li>
+											<li>Editplus</li>
+											<li>visual studio</li>
+											<li>sql server</li>
+										</ul>
+										<h5 class="widget-title" style="margin-top: 90px;">同时还掌握了以下辅助工具的使用</h5>
+
+										<ul style="list-style: circle;">
+											<li>Photoshop CC</li>
+											<li>PxCook 像素大厨</li>
+											<li>png图片转ico图标软件：AveIcon</li>
+											<li>屏幕取色器</li>
+											<li>录制gif动图 GifCam</li>
+										</ul>
+									</p>
+								</div>
+								<div class="col-md-6" style="padding-right: 50px;padding-top: 50px;">
+									<div class="wrap">
+										<div class="cube">
+											<div class="front"></div>
+											<div class="back"></div>
+											<div class="right"></div>
+											<div class="left"></div>
+											<div class="top"></div>
+											<div class="bottom"></div>
+
+											<i class="i-front"></i>
+											<i class="i-back"></i>
+											<i class="i-right"></i>
+											<i class="i-left"></i>
+											<i class="i-top"></i>
+											<i class="i-bottom"></i>
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<!-- .projects-holder -->
+						</div>
+						<hr>
+
+						<!-- CONTACT -->
+						<div class="page-section" id="contact">
+							<div class="row">
+								<div class="col-md-12">
+									<h4 class="widget-title">请联系我</h4>
+									<p></p>
+								</div>
+							</div>
+							<div class="row">
+								<form action="https://formspree.io/985041588@qq.com" method="POST" class="contact-form">
+									<fieldset class="col-md-4 col-sm-6">
+										<input type="text" id="yourname" name="姓名" placeholder="你的名字..." class="easyui-validatebox textbox" />
+									</fieldset>
+									<fieldset class="col-md-4 col-sm-6">
+										<input type="email" id="youremail" name="邮箱" placeholder="你的邮箱..." class="easyui-validatebox textbox" />
+									</fieldset>
+									<fieldset class="col-md-4 col-sm-12">
+										<input type="text" id="yoursubject" name="主题" placeholder="主题..." class="easyui-validatebox textbox" />
+									</fieldset>
+									<fieldset class="col-md-12 col-sm-12">
+										<textarea name="留言" id="message" cols="30" rows="6" placeholder="你的留言..." class="easyui-validatebox textbox"></textarea>
+									</fieldset>
+									<fieldset class="col-md-12 col-sm-12">
+										<input type="submit" class="button big default" value="发送信息">(点击发送后请进行人机验证,为了避免你是机器人恶意发送)
+									</fieldset>
+								</form>
+							</div>
+							<!-- .contact-form -->
+						</div>
+						<hr>
+
+					</div>
+
+				</div>
+			</div>
+
+			<script src="js/vendor/jquery-1.10.2.min.js"></script>
+			<script src="js/min/plugins.min.js"></script>
+			<script src="js/min/main.min.js"></script>
+
+	</body>
+
+</html>
